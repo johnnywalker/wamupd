@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wamupd (1.0)
+    wamupd (1.1)
       algorithms
       daemons
       dnsruby
