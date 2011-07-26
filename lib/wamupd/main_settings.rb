@@ -20,7 +20,7 @@ require "dnsruby"
 require "ipaddr"
 require "singleton"
 require "socket"
-require "yaml"
+require "psych"
 
 # Wamupd is a module that is used to namespace all of the wamupd code.
 module Wamupd
@@ -107,7 +107,7 @@ module Wamupd
 
         # Load some more settings from a YAML file
         def load_from_yaml(yaml_file)
-            y = YAML.load_file(yaml_file)
+            y = Psych.load_file(yaml_file)
             properties_map = { 
                 "hostname" => :@hostname,
                 "dns_server" => :@dns_server,
