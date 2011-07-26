@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.homepage          = "http://github.com/johnnywalker/wamupd"
   s.summary           = "A Ruby program to update DNS-SD using Avahi & D-Bus"
   s.description       = "Wamupd -- A Ruby program to update DNS-SD using Avahi & D-Bus"
-  s.rubyforge_project = s.name
+#  s.rubyforge_project = nil
 
   s.required_rubygems_version = ">= 1.3.6"
 
